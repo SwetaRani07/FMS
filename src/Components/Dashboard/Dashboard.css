@@ -1,0 +1,172 @@
+.hanging-container {
+    position: fixed;
+    top: 0;
+    left: -30%; /* Start hidden */
+    width: 30%;
+    height: 100vh;
+    background: var(--white-color);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease-in-out;
+    padding: 20px;
+}
+.hanging-container.open {
+    left: 0; /* Slide into view */
+}
+.toggle-btn {
+    position: absolute;
+    top: 10px;
+    right: -40px;
+    width: 40px;
+    height: 40px;
+    background: var(--accent-color);
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}  
+.toggle-btn:before {
+    content: "";
+    border: 2px solid var(--accent-color);
+    position: absolute;
+    top: -10px;
+    left: 0;
+    height: 100vh;
+}
+.hanging-container .content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.tracking-radio-group {
+    display: flex;
+    gap: 10%;
+    align-items: center;
+}
+.go-btn {
+    background: var(--accent-color);
+    color: var(--white-color);
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+/*Dashboard Page Starts*/
+
+/*Dashboard Tab section*/
+.tabs {
+    display: flex;
+    margin-top: 20px;
+}
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background: var(--border-color);
+    margin-right: 5px;
+    border-radius: 5px 5px 0 0;
+    font-weight: bold;
+}
+.tab.active {
+    background: var(--accent-color);
+    color: var(--white-color);
+}
+.tab-content {
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    background: var(--white-color);
+}
+
+/*Dashboard LIVE Tab*/
+.heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    position: relative;
+}
+.heading p {
+    font-size: 0.9rem;
+}
+.heading::after {
+    content: "";
+    border-bottom: 2px solid #555;
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+}
+
+/*Ongoing Trip Section*/
+.common-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.common-table thead th {
+    background: var(--white-color);
+    color: var(--heading-color);
+    text-align: center;
+}
+.common-table td, .common-table th {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    text-align: center;
+}
+.display-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    flex-flow: wrap;
+}
+.display-cards p {
+    background: var(--accent-color);
+    color: var(--white-color);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: center;
+}
+.display-cards.cards-wrap p {
+    flex: 1 1 calc(50% - 10px);
+    max-width: calc(45% - 10px);
+} 
+
+/*Live location block*/
+.live-location {
+    display: flex;
+}
+.liveLocationMap {
+    width: 70%;
+}
+.liveLocationContent {
+    margin: 15px 0 0 15px;
+}
+
+/*Nearby location block*/
+.nearby-icons svg {
+    width: 50px;
+    height: 50px;
+}
+.nearby-content {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+.nearby-content span {
+    margin-left: 40px;
+}
+.nearby-block .d-flex {
+    margin: 10px 0 20px;
+}
+
+/*Summary Tab*/
+.common-table.overall-summary {
+    margin-left: 30px;
+    width: 85%;
+}
+.ml-100{
+    margin-left: 100px;
+}

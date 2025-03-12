@@ -1,0 +1,74 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    color: var(--text-color);
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.login-block {
+    background-color: #fff;
+    padding: 50px;
+}
+.wrapper .fms-box h1 {
+    text-align: center;
+}
+.wrapper .form-box h2 {
+    text-align: center;
+}
+.wrapper .form-box .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+}
+.wrapper .form-box .input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgba(145, 181, 152, 0.5);
+    border-radius: 20px;
+    font-size: 1rem;
+    color: var(--text-color);
+    padding: 0 40px 0 10px;
+}
+.input-box input::placeholder{
+    color: #555;
+}
+.input-box .login-icon{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    translate: 0 -50%;
+}
+.forgot-password {
+    text-align: right;
+}
+.forgot-password a {
+    color: var(--accent-color);
+    font-size: 1rem;
+    text-decoration: none;
+}
+.forgot-password a:hover{
+    text-decoration: underline;
+}
+.form-box .submit-btn {
+    text-align: right;
+}
+.form-box .submit-btn button {
+    width: 50%;
+    height: 40px;
+    background: var(--accent-color);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(145, 181, 152, 0.5);
+    margin: 0 0 20px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+  
